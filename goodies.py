@@ -35,7 +35,7 @@ lst2=[]
 
 #finding the sum of first 3 prices of goods in lst1 and so on in iterative manner and stored in lst2
 for i in range(n-m+1):
-    lst2.append(sum(lst1[i:i+3]))
+    lst2.append(sum(lst1[i:i+(m-1)]))
     
 small=lst2.index(min(lst2))
 
