@@ -19,6 +19,7 @@ for i in range(n):
     k,v=input().split(':')
     d[k]=int(v)
     d1[int(v)]=k
+    
 lst=list(d.values())    #price of goods are stored in lst
 lst.sort()       #price of goods are sorted in ascending order so it becomes easier to find price difference btw goods
                         
@@ -43,4 +44,4 @@ lst3=lst[small:small+m]     #prices of goods distributed to the employees
 for i in range(m):
     print(d1[lst3[i]],':',lst3[i])
 
-print('And the difference between the chosen goodie with highest price and the lowest price is' ,lst3[-1]-lst3[0])
+print('And the difference between the chosen goodie with highest price and the lowest price is' , lst3[-1]-lst3[0])
